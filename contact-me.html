@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Displays my contacts details." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#128222; Contact Me</title>
+    <style>
+      body {
+        background-color: #cbbdf7;
+      }
+
+      img {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/gmail-on-laptop.jpg" alt="gmail-on-laptop" />
+    <h1>My Contacts:</h1>
+    <ul>
+      <li><a href="tel:+94713609867">Telephone</a></li>
+      <li><a href="mailto:nnapremarathne@gmail.com">Email</a></li>
+      <li><a href="https://github.com/nnapremarathne">GitHub</a></li>
+    </ul>
+
+    <hr />
+    <h2>Send Me an Email:</h2>
+    <form
+      action="mailto:nnapremarathne@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <div>
+        <label for="name">Enter Your Name:</label>
+        <input type="text" name="yourName" required />
+      </div>
+      <div>
+        <label for="email">Enter Your Email:</label>
+        <input type="email" name="yourEmail" required />
+      </div>
+      <div>
+        <label>Type Your Message: </label>
+        <textarea name="yourMessage" cols="30" rows="5">
+          I would like you to know ...
+        </textarea
+        ><br />
+      </div>
+      <div>
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+  </body>
+</html>
